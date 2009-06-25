@@ -1,25 +1,27 @@
 form.semantic fieldset
 {
-	clear: both;
-	padding: 10px;
+	clear: both;      
+	margin: 1em 0 0 0; 
+	padding: 10px;  
+    overflow: auto; 
 	background-color: #f8f8f8;
-	margin: 1em 0 0 0;
-	border: 1px solid gray;
-	overflow: auto;
+	border: 1px solid #888;      	
 }
 
 form.semantic legend 
 {
 	font-weight: bold;
 }
+        
  
 form.semantic div 
 {
-	clear: both;
+	clear: both;         
+	margin: 0;  
 	padding: 0.5em 0 0 0;
-	margin: 0;
 	overflow: visible;
 }
+ 
 
 form.semantic label 
 {
@@ -31,41 +33,12 @@ form.semantic label
 }
 
 
-
-
-form.semantic div span {
-  margin-left: 1ex;
-}
-          
-form.semantic input
-, form.semantic textarea
-{
-    font-family: monospace;
-}
-
-
 form.semantic input 
 , form.semantic select 
 , form.semantic textarea
 {
 	float: left;
 }
-
-
-
-
-
-form.semantic div.button-row
-{
-	text-align: right;
-}
-
-form.semantic div.button-row input
-{
-	float: none;
-}
-
-
 
 form.semantic ul {
   list-style-type: none;  
@@ -76,8 +49,7 @@ form.semantic ul {
 
 form.semantic li {
   clear: both;
-  padding: 2px 0;        
-
+  padding: 0.2em 0;        
 }
 
 form.semantic li label {
