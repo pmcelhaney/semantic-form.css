@@ -31,7 +31,12 @@ form.semantic label
 	padding: 0.2em 1ex 0.4em 0;
 	text-align: right;      
 }
-
+          
+form.semantic label.after 
+{
+    width: auto;
+    text-align: left;
+}
 
 form.semantic input 
 , form.semantic select 
@@ -68,6 +73,8 @@ form.semantic .button-row input
 	float: none;
 }
           
+    
+ 
              
 form.semantic div.long label 
 {
