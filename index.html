@@ -9,44 +9,77 @@
   <link rel="stylesheet" href="semantic-form.css" type="text/css">
 </head>
 <body>
+      
+<h2>Example Form</h2>
+
+<p>
+  This is an example form styled with <a href="semantic-form.css">semantic-form.css</a>.
+  View source to see the markup, which is simple, clean, and easy to modify. 
+ 
+</p>  
+  
   
 <form class="semantic">
-  <div>
-    <label for="first_name">First Name</label>
-    <input type="text" name="first_name" value="" size="30" id="first_name">
-  </div> 
   
-  <div>
-    <label for="last_name">Last Name</label>
-    <input type="text" name="last_name" value="" size="30" id="last_name">
-  </div>     
-  
-  <div>
-    <label for="phone_number">Phone Number</label>
-    <input type="text" name="phone_number" value="" size="15" id="phone_number">
-  </div>
-  
-  <div>
-    <label>Sex</label>
-    <ul>
-      <li><input type="radio" name="sex" value="Male" id="sex_male"><label for="sex_male">Male</label></li>
-      <li><input type="radio" name="sex" value="Female" id="sex_female"><label for="sex_female">Female</label></li>
-      <li><input type="radio" name="sex" value="Unspecified" id="sex_unspecified"><label for="sex_unspecified">Unspecified</label></li>
-    </ul>
+  <fieldset>
     
-  </div>
+    <legend>Contact Information</legend>
+ 
+    <div>
+      <label for="first_name">First name</label>
+      <input type="text" name="first_name" value="" size="30" id="first_name">
+    </div> 
+  
+    <div>
+      <label for="last_name">Last name</label>
+      <input type="text" name="last_name" value="" size="30" id="last_name">
+    </div>     
+  
+    <div>
+      <label for="phone_number">Phone number</label>
+      <input type="text" name="phone_number" value="" size="15" id="phone_number">
+    </div>
+  
+  </fieldset>   
+  
+  
+  <fieldset>
+    <legend>Miscellaneous Fields</legend>          
+    
+    <div>
+      <label>How did you hear about us?</label>
+      <ul>
+        <li><input type="checkbox" name="source" value="radio"    id="source_radio"   ><label for="source_radio"   >Radio</label></li>
+        <li><input type="checkbox" name="source" value="internet" id="source_internet"><label for="source_internet">Internet</label></li>
+        <li><input type="checkbox" name="source" value="friend"   id="source_friend"  ><label for="source_friend"  >Word of mouth</label></li>
+      </ul>
+    </div>
+    
+    <div>
+      <label>Sex</label>
+      <ul>
+        <li><input type="radio" name="sex" value="Male"        id="sex_male"               ><label for="sex_male"       >Male</label></li>
+        <li><input type="radio" name="sex" value="Female"      id="sex_female"             ><label for="sex_female"     >Female</label></li>
+        <li><input type="radio" name="sex" value="Unspecified" id="sex_unspecified" checked><label for="sex_unspecified">Unspecified</label></li>
+      </ul>
+    </div>
           
-  <div>
-     <label for="Password">Password</label>
-     <input type="text" name="password" value="" size="15" id="password">
-  </div>
-  
-  
-  
-  <div>
-    <label for="last_name">Do you have any comments?</label>
-    <textarea name="comments" id="comments" rows="8" cols="30"></textarea>
-  </div>
+    <div>
+       <label for="Password">Password</label>
+       <input type="text" name="password" value="" size="15" id="password">
+    </div>
+
+    <div>
+      <label for="last_name">Do you have any comments?</label>
+      <textarea name="comments" id="comments" rows="8" cols="30"></textarea>
+    </div>     
+ 
+ 
+  </fieldset>    
+
+  <div class="button-row">
+    <a href="#">Cancel</a> or <input type="submit" value="Save Changes">
+  </div>  
 
 </form>     
             
