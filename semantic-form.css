@@ -26,32 +26,10 @@ form.semantic label
 	display: block;
 	float: left;
 	width: 120px;
-	text-align: right;
-	padding: 0.2em 1ex 0.4em 0;      
+	padding: 0.2em 1ex 0.4em 0;
+	text-align: right;      
 }
 
-form.semantic label.after 
-{
-   display: inline;
-	width: auto;
-	text-align: left;
-	float: none;
-}
-
-form.semantic label.long 
-{
-	clear: both;
-	width: auto;
-	text-align: left;
-	float: none;
-}
-
-form.semantic label.error
-{
-	width: auto;
-	color: maroon;
-	text-align: left;
-} 
 
 
 
@@ -75,20 +53,6 @@ form.semantic input
 
 
 
-form.semantic div.field-row 
-{
-	clear: none;
-	float: left;
-	margin: 0;
-	padding: 0;
-	overflow: visible;
-}
-
-form.semantic div.field-row > *
-{
-	float: none;
-	display: inline;
-}
 
 
 form.semantic div.button-row
@@ -101,12 +65,7 @@ form.semantic div.button-row input
 	float: none;
 }
 
-.errorMessageContainer 
-{
-	font-weight: bold;
-	display: none;
-	color: maroon;
-}
+
 
 form.semantic ul {
   list-style-type: none;  
@@ -132,19 +91,4 @@ form.semantic li select {
   margin: 0 0 5px;
 }
 
-form.semantic div.errorMessageContainer 
-{
-	display: none;
-	font-weight: bold;
-	color: #77002a;
-	margin: 5px 0;
-}
-
-form.semantic input.error
-, form.semantic select.error
-, form.semantic textarea.error
-{
-    background-color: #77002a; 
-    color: white;
-}
 
