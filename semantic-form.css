@@ -68,6 +68,18 @@ form.semantic .button-row input
 	float: none;
 }
           
+             
+form.semantic div.long label 
+{
+    width: auto;
+    text-align: left;  
+    float: none;
+}
+
+form.semantic div.long textarea 
+{
+    width: 100%;
+}
 
 /* Errors -- for use with JQuery Validate, etc. */
 
