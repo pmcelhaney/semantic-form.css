@@ -85,10 +85,32 @@ form.semantic li label {
   text-align: left;
   padding: 0;
 } 
-
-
-form.semantic li select {
-  margin: 0 0 5px;
+           
+form.semantic .button-row
+{
+	text-align: right;
 }
 
+form.semantic .button-row input
+{
+	float: none;
+}
+          
+
+/* Errors -- for use with JQuery Validate, etc. */
+
+form.semantic input.error
+, form.semantic select.error
+, form.semantic textarea.error
+{
+    background-color: #77002a; 
+    color: white;
+ }                                                
+
+form.semantic label.error
+{
+  width: auto;
+  color: #77002a;
+  text-align: left;
+}
 
