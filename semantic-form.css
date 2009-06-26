@@ -28,7 +28,7 @@ form.semantic label
 	display: block;
 	float: left;
 	width: 120px;
-	padding: 0.2em 1ex 0.4em 0;
+	padding: 0 1ex;   
 	text-align: right;      
 }
           
@@ -36,7 +36,7 @@ form.semantic label.after
 {
     width: auto;
     text-align: left;
-}
+}                
 
 form.semantic input 
 , form.semantic select 
