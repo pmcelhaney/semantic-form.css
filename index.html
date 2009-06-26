@@ -6,7 +6,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Example Form with semantic-form.css</title>
 	<meta name="author" content="Patrick McElhaney">                
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js"></script>
   <link rel="stylesheet" href="semantic-form.css" type="text/css">
 </head>
 <body>
@@ -51,7 +50,8 @@
   </fieldset>   
   
   
-  <fieldset>
+  <fieldset>    
+    
     <legend>Miscellaneous Fields</legend>          
     
     <div>
@@ -82,15 +82,15 @@
       <textarea name="comments" id="comments" rows="8" cols="30"></textarea>
     </div>       
 
-   	<div class="long">
-    		<label class="long" for="comments_long">If you have any additional comments or questions, or you'd like to send us the manuscript for that novel you've been writing, feel free to use the space below.</label>
+    <div class="long">
+      <label class="long" for="comments_long">                          
+        If you have any additional comments or questions, or you'd like to
+        send us the manuscript for that novel you've been writing, feel free
+        to use the space below.
+     </label>                                                                          
+     <textarea id="comments_long" name="comments_long" rows="10" cols="100"></textarea>
+    </div>
 
-    		<textarea id="comments_long" name="comments_long" rows="10" cols="100"></textarea>
-
-   	</div>
-      
- 
- 
   </fieldset>    
 
   <div class="button-row">
