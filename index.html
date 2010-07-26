@@ -18,17 +18,17 @@
       margin: 0 auto;
       width: 700px;
     }
-		h1 { font-size: 3.8em; color: white; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
+		h1 { font-size: 3.8em;  margin-bottom: 3px; }
 		h2 { font-size: 1.5em; }
     h3 { text-align: center; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
 		pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-	</style>
+
+	</style>          
+	
+	<link rel="stylesheet" href="semantic-form.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	
 </head>
 
@@ -37,43 +37,113 @@
 
   <div id="container">
 
-    <div class="download">
-      <a href="http://github.com/pmcelhaney/semantic-form.css/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/pmcelhaney/semantic-form.css/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="http://github.com/pmcelhaney/semantic-form.css">semantic-form.css</a>
-      <span class="small">by <a href="http://github.com/pmcelhaney">Patrick McElhaney</a></span></h1>
-
-    <div class="description">
-      Stylesheet I use for all of my forms. 
-    </div>
-
-    <h2>Authors</h2>
-<p>Patrick McElhaney (pmcelhaney@gmail.com)
-<br/>
-<br/>      </p>
-<h2>Contact</h2>
-<p>Patrick McElhaney (pmcelhaney@gmail.com)
-<br/>      </p>
 
 
-    <h2>Download</h2>
-    <p>
+    <h1>Semantic-Form.css</h1>
+
+
+		<p>
+		  This example form is styled with <a href="http://github.com/pmcelhaney/semantic-form.css">semantic-form.css</a>.
+		  View source to see the <a href="http://github.com/pmcelhaney/semantic-form.css/blob/gh-pages/index.html">markup</a>, which is simple, clean, and easy to modify. This is meant to
+		  be a good base; you can add additional styles to dress up or fine tune.
+
+		</p>  
+
+
+		<form class="semantic">
+
+		  <fieldset>
+
+		    <legend>Contact Information</legend>
+
+		    <div>
+		      <label for="first_name">First name</label>
+		      <input type="text" name="first_name" value="" size="30" id="first_name">
+		    </div> 
+
+		    <div>
+		      <label for="last_name">Last name</label>
+		      <input type="text" name="last_name" value="" size="30" id="last_name">
+		    </div>
+
+		    <div>
+		      <label for="last_name">Email Address</label>
+		      <input type="text" name="last_name" value="" size="30" id="last_name" class="error">
+		      <label class="error">Please enter a valid email address (validation example)</label>
+		    </div>     
+
+		    <div>
+		      <label for="phone_number">Phone number</label>
+		      <input type="text" name="phone_number" value="" size="15" id="phone_number"> 
+		      <label class="after">(xxx) xxx-xxxx</label>
+		    </div>
+
+		  </fieldset>   
+
+
+		  <fieldset>    
+
+		    <legend>Miscellaneous Fields</legend>          
+
+		    <div>
+		      <label>How did you hear about us?</label>
+		      <ul>
+		        <li><input type="checkbox" name="source" value="radio"    id="source_radio"   ><label for="source_radio"   >Radio</label></li>
+		        <li><input type="checkbox" name="source" value="internet" id="source_internet"><label for="source_internet">Internet</label></li>
+		        <li><input type="checkbox" name="source" value="friend"   id="source_friend"  ><label for="source_friend"  >Word of mouth</label></li>
+		      </ul>
+		    </div>
+
+		    <div>
+		      <label>Sex</label>
+		      <ul>
+		        <li><input type="radio" name="sex" value="Male"        id="sex_male"               ><label for="sex_male"       >Male</label></li>
+		        <li><input type="radio" name="sex" value="Female"      id="sex_female"             ><label for="sex_female"     >Female</label></li>
+		        <li><input type="radio" name="sex" value="Unspecified" id="sex_unspecified" checked><label for="sex_unspecified">Unspecified</label></li>
+		      </ul>
+		    </div>
+
+		    <div>
+		       <label for="Password">Password</label>
+		       <input type="password" name="password" value="" size="15" id="password">
+		    </div>
+
+		    <div>
+		      <label for="last_name">Comments</label>
+		      <textarea name="comments" id="comments" rows="8" cols="30"></textarea>
+		    </div>       
+
+		    <div class="long">
+		      <label class="long" for="comments_long">                          
+		        If you have any additional comments or questions, or you'd like to
+		        send the manuscript for that novel you've been writing, feel free
+		        to use the space below.
+		     </label>                                                                          
+		     <textarea id="comments_long" name="comments_long" rows="10" cols="100"></textarea>
+		    </div>
+
+		  </fieldset>    
+
+		  <div class="button-row">
+		    <a href="#">Cancel</a> or <input type="submit" value="Save Changes">
+		  </div>  
+
+		</form>
+
+
+
+    <h2>About</h2>
+
+		<p>The semantic-form.css stylesheet was created by <a href="http://patrickmcelhaney.com">Patrick McElhaney</a> (pmcelhaney@gmail.com).
+		 
       You can download this project in either
       <a href="http://github.com/pmcelhaney/semantic-form.css/zipball/master">zip</a> or
       <a href="http://github.com/pmcelhaney/semantic-form.css/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+    You can also clone the project with <a href="http://git-scm.com">Git</a>
       by running:
       <pre>$ git clone git://github.com/pmcelhaney/semantic-form.css</pre>
     </p>
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/pmcelhaney/semantic-form.css">pmcelhaney/semantic-form.css</a>
-    </div>
 
   </div>
 
