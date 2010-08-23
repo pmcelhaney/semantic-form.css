@@ -1,68 +1,68 @@
 form.semantic fieldset
 {
-	clear: both;      
-	margin: 1em 0 0 0; 
-	padding: 10px;  
-    overflow: auto; 
+	clear: both;
+	margin: 1em 0 0 0;
+	padding: 10px;
+	overflow: auto;
 	background-color: #f8f8f8;
-	border: 1px solid #888;      	
+	border: 1px solid #888;
 }
 
-form.semantic legend 
+form.semantic legend
 {
 	font-weight: bold;
 }
-        
- 
-form.semantic div 
+
+form.semantic div
 {
-	clear: both;         
-	margin: 0;  
+	clear: both;
+	margin: 0;
 	padding: 0.5em 0 0 0;
 	overflow: visible;
 }
- 
+
 
 form.semantic label 
 {
 	display: block;
 	float: left;
 	width: 120px;
-	margin: 0 1ex 0 0;    
-	text-align: right;      
+	margin: 0 1ex 0 0;
+	text-align: right;     
+	
 }
           
-form.semantic label.after 
+form.semantic label.after
 {
-    width: auto;
-    text-align: left;
-}                
+	width: auto;
+	text-align: left;
+}
 
-form.semantic input 
-, form.semantic select 
+form.semantic input
+, form.semantic select
 , form.semantic textarea
 {
 	float: left;
 }
 
 form.semantic ul {
-  list-style-type: none;  
-  float: left;
-  padding: 0;  
-  margin: 0;
+	list-style-type: none; 
+	float: left;
+	padding: 0;
+	margin: 0;
 }
 
 form.semantic li {
-  clear: both;
-  padding: 0.2em 0;        
+	clear: both;
+	padding: 0.2em 0;
 }
 
 form.semantic li label {
-  width: auto;  
-  text-align: left;
-  padding: 0;
-} 
-           
+	width: auto;
+	text-align: left;
+	padding: 0;
+}
+
 form.semantic .button-row
 {
 	text-align: right;
@@ -72,20 +72,17 @@ form.semantic .button-row input
 {
 	float: none;
 }
-          
-    
- 
-             
+
 form.semantic div.long label 
 {
-    width: auto;
-    text-align: left;  
-    float: none;
+	width: auto;
+	text-align: left;  
+	float: none;
 }
 
 form.semantic div.long textarea 
 {
-    width: 100%;
+	width: 100%;
 }
 
 /* Errors -- for use with JQuery Validate, etc. */
@@ -94,14 +91,14 @@ form.semantic input.error
 , form.semantic select.error
 , form.semantic textarea.error
 {
-    background-color: #77002a; 
-    color: white;
+	background-color: #77002a;
+	color: white;
 }                                                
 
 form.semantic label.error
 {
-  width: auto;
-  color: #77002a;
-  text-align: left;
+	width: auto;
+	color: #77002a;
+	text-align: left;
 }
 
