@@ -27,15 +27,25 @@ form.semantic label
 	display: block;
 	float: left;
 	width: 120px;
-	margin: 2px 1ex 0 0;
-	text-align: right;     
-	
+	text-align: right;
+	padding: 2px 1ex 6px 0;
+	vertical-align: baseline;
 }
           
-form.semantic label.after
+form.semantic label.after 
 {
 	width: auto;
+	text-align: left; 
+	display: inline; 
+	float: none;
+}
+
+form.semantic label.long 
+{
+	clear: both;
+	width: auto;
 	text-align: left;
+	float: none;
 }
 
 form.semantic input
@@ -43,6 +53,12 @@ form.semantic input
 , form.semantic textarea
 {
 	float: left;
+}     
+
+form.semantic input[type=radio]
+, form.semantic input[type=checkbox]
+{
+	vertical-align: text-bottom;
 }
 
 form.semantic ul {
@@ -61,6 +77,21 @@ form.semantic li label {
 	width: auto;
 	text-align: left;
 	padding: 0;
+}   
+
+form.semantic div.field-row 
+{
+	clear: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+}
+
+form.semantic div.field-row *
+{
+	float: none;
+	display: inline;
 }
 
 form.semantic .button-row
@@ -100,5 +131,6 @@ form.semantic label.error
 	width: auto;
 	color: #77002a;
 	text-align: left;
-}
+}       
+
 
